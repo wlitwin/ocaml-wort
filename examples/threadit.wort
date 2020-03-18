@@ -1,0 +1,4 @@
+let add3 x y z =
+ x y add z add
+in
+1 2 3 add 4 add3

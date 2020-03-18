@@ -1,0 +1,8 @@
+let drop x = in
+let bi b1 b2 x =
+    x b1 call
+    x b2 call
+in
+let add1 = 1 add in
+let add2 = 2 add in
+10 { add1 } { add2 } bi

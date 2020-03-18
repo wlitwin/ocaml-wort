@@ -1,0 +1,10 @@
+let compose f g = {g call f call} in
+let partial f x = {x f call} in
+let add1 = 1 add in
+let add1p = 1 { add } partial call in
+{ 1 2 3 } { add add add1 } compose call
+bind x (
+    x add1
+    x add1p
+    eq
+)

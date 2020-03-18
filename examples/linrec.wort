@@ -1,0 +1,18 @@
+let dup x = x x in
+let drop x = in
+let succ = 1 add in
+let pred = -1 add in
+let null = 0 eq in
+let pdup v = v dup -1 add in
+let fact n =
+	let loop f v =
+		let c = v null in
+		let base = { v succ } in
+		let recur = {
+            v dup pred f call mul				
+		} in
+        recur base c if call
+	in
+    n {loop} fix
+in
+4 fact

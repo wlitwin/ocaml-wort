@@ -1,0 +1,18 @@
+(library
+ (name ocaml_wort)
+ (preprocess (pps ppx_deriving.show))
+ (libraries 
+    core
+    ppx_deriving
+    )
+ )
+
+(rule
+    (targets parser.mli parser.ml)
+    (deps parser.mly)
+    (action (run menhir --explain parser.mly)))
+
+(rule
+    (targets lexer.ml)
+    (deps lexer.mll) 
+    (action (run ocamllex lexer.mll)))

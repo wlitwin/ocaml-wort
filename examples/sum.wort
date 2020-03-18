@@ -1,0 +1,14 @@
+let add1 = 1 add in
+let decr = -1 add in
+let sumaux f i s n =
+	{ n
+      s i add
+      i add1
+      f call }
+	{ s }
+	i n add1 eq
+	if
+	call
+in
+let sum = 0 {sumaux} fix in
+100 0 sum

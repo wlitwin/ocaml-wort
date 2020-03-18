@@ -1,0 +1,12 @@
+let decr = -1 add in
+let ifc = if call in
+let fact n =
+    let aux f n s =
+        { n s mul n decr f call }
+        { s }
+        1 n less
+        ifc
+    in
+    1 n {aux} fix
+in
+10 fact

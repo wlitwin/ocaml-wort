@@ -1,0 +1,6 @@
+let swap x y = y x in
+let dup x = x x in
+let zap x = in
+let bury x y z = x z y in
+1 2 3 bury swap zap dup add
+
