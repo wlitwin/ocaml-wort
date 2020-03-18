@@ -1,7 +1,7 @@
 OCaml Wort
 ====
 
-This is a port of Robert Kleffner's (Wort language)[https://github.com/robertkleffner/wort] from Racket to OCaml with a few modifications. The port tries to stay close to the Racket implementation, notably `eval.ml` and `infer.ml`
+This is a port of Robert Kleffner's [Wort language](https://github.com/robertkleffner/wort) from Racket to OCaml with a few modifications. The port tries to stay close to the Racket implementation, notably `eval.ml` and `infer.ml`
 
 The modifications are in the syntax. Instead of:
 
